@@ -52,7 +52,7 @@
                         <h4 class="ct_link_title">сыры на красивых
                             картинках из интернета:
                             какие они на вкус?</h4>
-                        
+
                     </a>
                 </div>
             </article>
@@ -308,12 +308,14 @@
         <div class="main_products_content">
             <article class="main_products_item">
                 <div class="main_products_item_img">
-                    <picture>
+                    <picture class="main_products_item_img_container">
                         <source media="(min-width: 1200px)" srcset="images/shop-item-desk1.jpg">
-                        <source media="((min-width: 641px) and (max-width: 1200px))" srcset="images/shop-item-tablet1.jpg">
-                        <source media="((min-width: 641px) and (max-width: 1200px) and (orientation: portrait))" srcset="images/shop-item-tablet1.jpg">
+                        <source media="(max-width: 1200px) and (min-width: 641px)"
+                            srcset="images/shop-item-tablet1.jpg">
+                        <source media="(min-width: 641px) and (max-width: 1200px) and (orientation: portrait)"
+                            srcset="images/shop-item-tablet1.jpg">
                         <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
-                        <img src="images/shop-item-desk1.jpg" alt="Pillow on the chair">
+                        <img src="images/shop-item-desk1.jpg" alt="Pillow on the chair" class="main_products_img">
                     </picture>
                 </div>
                 <div class="products_item_desc">
@@ -326,10 +328,10 @@
                             class="products_link">здесь.</a>
                     </p>
                     <div class="products_bottom_container">
-                        <ul class="products_price">
-                            <li class="products_price_value old">1000 &#8381</li>
-                            <li class="products_price_value">800 &#8381</li>
-                        </ul>
+                        <div class="products_price">
+                            <div class="products_price_value old">1000 &#8381</div>
+                            <div class="products_price_value">800 &#8381</div>
+                        </div>
                         <button class="products_button" type="button">В магазин</button>
                     </div>
 
@@ -337,7 +339,15 @@
             </article>
             <article class="main_products_item">
                 <div class="main_products_item_img">
-
+                    <picture class="main_products_item_img_container">
+                        <source media="(min-width: 1200px)" srcset="images/shop-item-desk2.jpg">
+                        <source media="(max-width: 1200px) and (min-width: 641px)"
+                            srcset="images/shop-item-tablet2.jpg">
+                        <source media="(min-width: 641px) and (max-width: 1200px) and (orientation: portrait)"
+                            srcset="images/shop-item-tablet2.jpg">
+                        <source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
+                        <img src="images/shop-item-desk2.jpg" alt="Pillow on the chair" class="main_products_img">
+                    </picture>
                 </div>
                 <div class="products_item_desc">
 
@@ -349,9 +359,9 @@
                             class="products_link">весенняя серия постов</a> в блоге и несколько подкастов.
                     </p>
                     <div class="products_bottom_container">
-                        <ul class="products_price">
-                            <li class="products_price_value">3500 &#8381</li>
-                        </ul>
+                        <div class="products_price">
+                            <div class="products_price_value">3500 &#8381</div>
+                        </div>
                         <button class="products_button" type="button">В магазин</button>
                     </div>
 
@@ -359,7 +369,15 @@
             </article>
             <article class="main_products_item">
                 <div class="main_products_item_img">
-
+                    <picture class="main_products_item_img_container">
+                        <source media="(min-width: 1200px)" srcset="images/shop-item-desk3.jpg">
+                        <source media="(max-width: 1200px) and (min-width: 641px)"
+                            srcset="images/shop-item-tablet3.jpg">
+                        <source media="(min-width: 641px) and (max-width: 1200px) and (orientation: portrait)"
+                            srcset="images/shop-item-tablet3.jpg">
+                        <source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
+                        <img src="images/shop-item-desk3.jpg" alt="Pillow on the chair" class="main_products_img">
+                    </picture>
                 </div>
                 <div class="products_item_desc">
 
@@ -371,10 +389,10 @@
                             рамку из подручных средств за 30 минут»</a>
                     </p>
                     <div class="products_bottom_container">
-                        <ul class="products_price">
-                            <li class="products_price_value old">500 &#8381</li>
-                            <li class="products_price_value">400 &#8381</li>
-                        </ul>
+                        <div class="products_price">
+                            <div class="products_price_value old">500 &#8381</div>
+                            <div class="products_price_value">400 &#8381</div>
+                        </div>
                         <button class="products_button" type="button">В магазин</button>
                     </div>
 
@@ -406,6 +424,7 @@
     <div class="pop_up">
         <div class="pup_up_container">
             <form class="pop_up_form">
+                <img src="images/svg/form-x.svg" alt="Close" class="pop_up_close">
                 <h1 class="pop_up_title">ваш фидбек</h1>
                 <label class="pop_up_select_label">
                     <span class="pop_up_select_title">Как часто вы заходите на сайт?</span>
